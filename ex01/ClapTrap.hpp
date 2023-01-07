@@ -19,11 +19,6 @@ public:
 
 	std::string		GetName() const;
 	unsigned int 	GetAttackDamage() const;
-
-	//void	SetName(std::string name);
-	//void	SetHitPoint(unsigned int hit_point);
-	//void	SetEnergyPoint(unsigned int energy_point);
-	//void	SetAttackDamage(unsigned int attack_point);
 	
 protected:
 	std::string		_name;

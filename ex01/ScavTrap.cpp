@@ -35,6 +35,24 @@ ScavTrap::~ScavTrap()
 
 void	ScavTrap::attack(const std::string& target)
 {
+	if (CanIDoAnything() == false)
+	{
+		PrintImmovable();
+		return;
+	}
 	std::cout << "ScavTrap " << _name << " attacks " << target << ", causing " << _attack_damage << " points of damage!" << std::endl;
+
+	--_energy_point;
+	
+	PrintStatus();
 }
-void			guardGate();
+
+void			ScavTrap::guardGate()
+{
+	if (CanIDoAnything() == false)
+	{
+		PrintImmovable();
+		return;
+	}
+	std::cout << "ScavTrap is now in Gate keeper mode." << std::endl;
+}

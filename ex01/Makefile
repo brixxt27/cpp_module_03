@@ -1,4 +1,4 @@
-NAME	=	aaaaand_open
+NAME	=	serena_my_love
 SRCS	=	main.cpp		\
 			ClapTrap.cpp	\
 			ScavTrap.cpp
