@@ -103,3 +103,8 @@ void	ClapTrap::PrintStatus() const
 	std::cout << "Energy point is " << _energy_point << std::endl;
 	std::cout << "*\n" << std::endl;
 }
+
+ClapTrap::ClapTrap()
+{
+	std::cout << "ClapTrap's default constructor" << std::endl;
+}

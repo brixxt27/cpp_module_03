@@ -1,4 +1,5 @@
 #include "DiamondTrap.hpp"
+#include <iostream>
 
 DiamondTrap::DiamondTrap(std::string name)
 	: ClapTrap(name, 100, 50, 30)
@@ -24,3 +25,8 @@ DiamondTrap::DiamondTrap(std::string name)
 //{
 
 //}
+
+DiamondTrap::DiamondTrap()
+{
+	std::cout << "DiamondTrap's default constructor" << std::endl;
+}

@@ -47,7 +47,7 @@ void	ScavTrap::attack(const std::string& target)
 	PrintStatus();
 }
 
-void			ScavTrap::guardGate()
+void	ScavTrap::guardGate()
 {
 	if (CanIDoAnything() == false)
 	{
@@ -57,4 +57,9 @@ void			ScavTrap::guardGate()
 
 	std::cout << "ScavTrap is now in Gate keeper mode." << std::endl;
 	PrintStatus();
+}
+
+ScavTrap::ScavTrap()
+{
+	std::cout << "ScavTrap's default constructor" << std::endl;
 }

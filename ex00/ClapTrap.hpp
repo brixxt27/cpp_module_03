@@ -25,6 +25,8 @@ private:
 	bool	CanIDoAnything() const;
 	void	PrintImmovable() const;
 	void	PrintStatus() const;
+
+	ClapTrap();
 };
 
 #endif

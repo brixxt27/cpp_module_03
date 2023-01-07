@@ -44,3 +44,8 @@ void FragTrap::highFivesGuys(void)
 	std::cout << "FragTrap is request a positive high fives!" << std::endl;
 	PrintStatus();
 }
+
+FragTrap::FragTrap()
+{
+	std::cout << "FragTrap's default constructor" << std::endl;
+}

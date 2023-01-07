@@ -56,3 +56,8 @@ void			ScavTrap::guardGate()
 	}
 	std::cout << "ScavTrap is now in Gate keeper mode." << std::endl;
 }
+
+ScavTrap::ScavTrap()
+{
+	std::cout << "ScavTrap's default constructor" << std::endl;
+}
