@@ -14,10 +14,10 @@ public:
 	virtual ~ClapTrap();
 
 	virtual void	attack(const std::string& target);
-	void	takeDamage(unsigned int amount);
-	void	beRepaired(unsigned int amount);
+	void			takeDamage(unsigned int amount);
+	void			beRepaired(unsigned int amount);
 
-	std::string	GetName() const;
+	std::string		GetName() const;
 	unsigned int 	GetAttackDamage() const;
 
 	//void	SetName(std::string name);
