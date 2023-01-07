@@ -54,5 +54,7 @@ void			ScavTrap::guardGate()
 		PrintImmovable();
 		return;
 	}
+
 	std::cout << "ScavTrap is now in Gate keeper mode." << std::endl;
+	PrintStatus();
 }

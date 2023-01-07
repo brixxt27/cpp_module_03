@@ -40,6 +40,7 @@ void FragTrap::highFivesGuys(void)
 		PrintImmovable();
 		return;
 	}
-	
+
 	std::cout << "FragTrap is request a positive high fives!" << std::endl;
+	PrintStatus();
 }
