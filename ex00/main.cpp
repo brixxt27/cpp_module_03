@@ -8,5 +8,5 @@ int	main(void)
 	a.beRepaired(1);
 	a.takeDamage(15);
 	a.attack("Clap2");
-	a.attack("Clap2");
+	a.beRepaired(3);
 }

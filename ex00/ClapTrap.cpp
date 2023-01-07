@@ -17,10 +17,13 @@ ClapTrap::ClapTrap(const ClapTrap& other)
 	, _energy_point(other._energy_point)
 	, _attack_damage(other._attack_damage)
 {
+	std::cout << "ClapTrap's copy constructor is called" << std::endl;
 }
 
 ClapTrap&	ClapTrap::operator=(const ClapTrap& rhs)
 {
+	std::cout << "ClapTrap's overloaded copy assignment operator is called" << std::endl;
+
 	_name = rhs._name;
 	_hit_point = rhs._hit_point;
 	_energy_point = rhs._energy_point;
@@ -42,7 +45,9 @@ void	ClapTrap::attack(const std::string& target)
 		PrintImmovable();
 		return;
 	}
+
 	std::cout << "ClapTrap " << _name << " attacks " << target << ", causing " << _attack_damage << " points of damage!" << std::endl;
+
 	PrintStatus();
 }
 
@@ -60,6 +65,7 @@ void	ClapTrap::takeDamage(unsigned int amount)
 		_hit_point -= amount;
 
 	std::cout << "ClapTrap " << _name << " take damage " << amount << " points!" << std::endl;
+
 	PrintStatus();
 }
 
@@ -74,6 +80,7 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	_hit_point += amount;
 
 	std::cout << "ClapTrap " << _name << " repair myself " << amount << " points!" << std::endl;
+	
 	PrintStatus();
 }
 
@@ -90,10 +97,9 @@ void	ClapTrap::PrintImmovable() const
 
 void	ClapTrap::PrintStatus() const
 {
-	//std::cout << std::setw() << std::endl;
-	std::cout << "\n***" << std::endl;
+	std::cout << "\n*" << std::endl;
 	std::cout << "I am " << _name << std::endl;
 	std::cout << "Hit point is " << _hit_point << std::endl;
 	std::cout << "Energy point is " << _energy_point << std::endl;
-	std::cout << "***\n" << std::endl;
+	std::cout << "*\n" << std::endl;
 }
