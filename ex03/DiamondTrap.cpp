@@ -2,8 +2,14 @@
 #include <iostream>
 
 DiamondTrap::DiamondTrap(std::string name)
-	: ClapTrap(name, 100, 50, 30)
+	: ClapTrap(name + "_clap_name", 100, 50, 30)
+	, ScavTrap()
+	, FragTrap()
+	, _name(name)
 {
+	// 출력문 필요
+	ScavTrap::_name = "1";
+	_name = "2";
 }
 
 //DiamondTrap::DiamondTrap(const DiamondTrap& other)
@@ -16,10 +22,10 @@ DiamondTrap::DiamondTrap(std::string name)
 
 //}
 
-//DiamondTrap::~DiamondTrap()
-//{
-
-//}
+// DiamondTrap::~DiamondTrap()
+// {
+	
+// }
 
 //void	DiamondTrap::whoAmI()
 //{
