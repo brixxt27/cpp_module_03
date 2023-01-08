@@ -15,6 +15,14 @@ int	main(void)
 	DiamondTrap	Diamond2(Diamond1);
 
 	Diamond2.attack("clap1");	
-	Diamond1.whoAmI();
+	Diamond2.whoAmI();
+	Diamond2.highFivesGuys();
+
+	DiamondTrap	Diamond3("Diamond3");
+
+	Diamond2 = Diamond3;
+	Diamond2.attack("clap1");	
+	Diamond2.whoAmI();
+	Diamond3.whoAmI();
 	Diamond2.highFivesGuys();
 }

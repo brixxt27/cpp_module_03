@@ -29,6 +29,7 @@ DiamondTrap&	DiamondTrap::operator=(const DiamondTrap& rhs)
 		_hit_point = rhs._hit_point;
 		_energy_point = rhs._energy_point;
 		_attack_damage = rhs._attack_damage;
+		ClapTrap::_name = rhs.ClapTrap::_name;
 	}
 
 	return *this;
