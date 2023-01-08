@@ -16,6 +16,13 @@ public:
 
 protected:
 	FragTrap();
+
+	enum e_attribute
+	{
+		HIT_POINT = 100,
+		ENERGY_POINT = 100,
+		ATTACK_DAMAGE = 30
+	};
 };
 
 #endif

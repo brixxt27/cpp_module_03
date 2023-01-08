@@ -31,6 +31,13 @@ protected:
 	void	PrintStatus() const;
 
 	ClapTrap();
+
+	enum e_attribute
+	{
+		HIT_POINT = 10,
+		ENERGY_POINT = 10,
+		ATTACK_DAMAGE = 0
+	};
 };
 
 #endif

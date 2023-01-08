@@ -2,7 +2,7 @@
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap(std::string name)
-	: ClapTrap(name, 100, 50, 20)
+	: ClapTrap(name, HIT_POINT, ENERGY_POINT, ATTACK_DAMAGE)
 {
 	std::cout << "ScavTrap's constructor is called" << std::endl;
 }

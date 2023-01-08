@@ -2,7 +2,7 @@
 #include "FragTrap.hpp"
 
 FragTrap::FragTrap(std::string name)
-	: ClapTrap(name, 100, 100, 30)
+	: ClapTrap(name, HIT_POINT, ENERGY_POINT, ATTACK_DAMAGE)
 {
 	std::cout << "FragTrap's constructor is called" << std::endl;
 }

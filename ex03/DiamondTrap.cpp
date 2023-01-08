@@ -2,7 +2,7 @@
 #include <iostream>
 
 DiamondTrap::DiamondTrap(std::string name)
-	: ClapTrap(name + "_clap_name", 100, 50, 30)
+	: ClapTrap(name + "_clap_name", HIT_POINT, ENERGY_POINT, ATTACK_DAMAGE)
 	, ScavTrap()
 	, FragTrap()
 	, _name(name)

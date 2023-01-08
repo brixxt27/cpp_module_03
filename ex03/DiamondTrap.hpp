@@ -5,7 +5,7 @@
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
-class DiamondTrap : public ScavTrap, public FragTrap
+class DiamondTrap : virtual public ScavTrap, virtual public FragTrap
 {
 public:
 	DiamondTrap(std::string name);
@@ -19,6 +19,13 @@ protected:
 	std::string	_name;
 
 	DiamondTrap();
+
+	enum e_attribute
+	{
+		HIT_POINT = FragTrap::HIT_POINT,
+		ENERGY_POINT = ScavTrap::ENERGY_POINT,
+		ATTACK_DAMAGE = FragTrap::ATTACK_DAMAGE
+	};
 };
 
 #endif
