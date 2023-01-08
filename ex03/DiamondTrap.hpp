@@ -13,7 +13,8 @@ public:
 	DiamondTrap&	operator=(const DiamondTrap& rhs);
 	virtual ~DiamondTrap();
 
-	// void	whoAmI();
+	inline virtual void	attack(const std::string& target){	ScavTrap::attack(target);}
+	void	whoAmI();
 
 protected:
 	std::string	_name;
