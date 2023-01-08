@@ -109,14 +109,14 @@ make
 - 위 이름 조건에 대해 명확한 예를 준다면 다음과 같다.:
 	- 만약 ClapTrap 의 변수 이름이 name 이라면 DiamonTrap 의 변수 이름도 name 이어야 한다.
 	- 만약 ClapTrap 의 변수 이름이 _name 이라면 DiamonTrap 의 변수 이름도 _name 이어야 한다.
-- 이것의 속성과 멤버 함수는 부모 클래스 둘 중 하나를 선택하게 된다:
+- 속성과 멤버 함수는 부모 클래스 둘 중 하나를 선택하게 된다:
 	- Name, 생성자 인자로 들어온 인자로 초기화 된다.
 	- ClapTrap::name(생성자 인자로 들어온 문자열에 "_clap_name" 의 접미사가 붙어야 한다)
 	- Hit points(FlagTrap)
 	- Energy points(ScavTrap)
 	- Attack damage(FragTrap)
 	- attack() (ScavTrap)
-- 추가로 두 부모 class의 특별한 함수를 추가해야 하고, DiamondTrap 은 이를 가지고 있어야 한다:
+- 두 부모 클래스의 특별한 함수들 외에도, DiamondTrap 은 자신만의 특수 능력을 가진다:
 	- void	whoAmI();
 		- 이 멤버 함수는 이름과 그것의 ClapTrap 이름을 출력해야 한다.
 - 물론, DiamondTrap 의 ClapTrap 하위 개체는 만들어 질 것이고, 딱 한 번 만들어질 것이다. 맞아, 여기엔 트릭이 있어.

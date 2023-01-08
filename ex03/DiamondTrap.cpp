@@ -39,14 +39,23 @@ DiamondTrap::~DiamondTrap()
 	std::cout << "DiamondTrap's destructor is called" << std::endl;
 }
 
-// void	DiamondTrap::attack(const std::string& target)
-// {
-// 	ScavTrap::attack(target);
-// }
+void	DiamondTrap::attack(const std::string& target)
+{
+	ScavTrap::attack(target);
+}
 
 void	DiamondTrap::whoAmI()
 {
+	if (CanIDoAnything() == false)
+	{
+		PrintImmovable();
+		return;
+	}
 
+	std::cout << "\nWWWWWWWWWWWho AAAAAAAAAAAm IIIIIIIII" << std::endl;
+	std::cout << "My name is " << _name << std::endl
+	<< "Parent ClapTrap's name is " << ClapTrap::_name << std::endl;
+	std::cout << "WWWWWWWWWWWho AAAAAAAAAAAm IIIIIIIII\n" << std::endl;
 }
 
 DiamondTrap::DiamondTrap()
