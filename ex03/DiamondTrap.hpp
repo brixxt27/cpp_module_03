@@ -9,9 +9,9 @@ class DiamondTrap : virtual public ScavTrap, virtual public FragTrap
 {
 public:
 	DiamondTrap(std::string name);
-	// DiamondTrap(const DiamondTrap& other);
-	// DiamondTrap&	operator=(const DiamondTrap& rhs);
-	// virtual ~DiamondTrap();
+	DiamondTrap(const DiamondTrap& other);
+	DiamondTrap&	operator=(const DiamondTrap& rhs);
+	virtual ~DiamondTrap();
 
 	// void	whoAmI();
 

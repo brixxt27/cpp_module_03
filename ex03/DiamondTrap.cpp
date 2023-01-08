@@ -7,30 +7,38 @@ DiamondTrap::DiamondTrap(std::string name)
 	, FragTrap()
 	, _name(name)
 {
-	// 출력문 필요
-	ScavTrap::_name = "1";
-	_name = "2";
+	std::cout << "DiamondTrap's constructor is called" << std::endl;
 }
 
-//DiamondTrap::DiamondTrap(const DiamondTrap& other)
-//{
+DiamondTrap::DiamondTrap(const DiamondTrap& other)
+{
+	std::cout << "DiamondTrap's copy constructor is called" << std::endl;
+}
 
-//}
+DiamondTrap&	DiamondTrap::operator=(const DiamondTrap& rhs)
+{
+	std::cout << "DiamondTrap's copy assignment operator is called" << std::endl;
 
-//DiamondTrap&	DiamondTrap::operator=(const DiamondTrap& rhs)
-//{
+	if (this != &rhs)
+	{
+		_name = rhs._name;
+		_hit_point = rhs._hit_point;
+		_energy_point = rhs._energy_point;
+		_attack_damage = rhs._attack_damage;
+	}
 
-//}
+	return *this;
+}
 
-// DiamondTrap::~DiamondTrap()
+DiamondTrap::~DiamondTrap()
+{
+	std::cout << "DiamondTrap's destructor is called" << std::endl;
+}
+
+// void	DiamondTrap::whoAmI()
 // {
-	
+
 // }
-
-//void	DiamondTrap::whoAmI()
-//{
-
-//}
 
 DiamondTrap::DiamondTrap()
 {
